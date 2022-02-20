@@ -5,9 +5,9 @@ package arithmetic.day01;
  * @author: Liu jiang
  * @Date: 2021-07-22 19:18
  * @FilePath: TextDemo  ==> dichotomia
- * @Good Mood: Today is another beautiful day£¡
- * @Study Code: Did you study today£¿
- * ¶þ·Ö²éÕÒ
+ * @Good Mood: Today is another beautiful dayï¿½ï¿½
+ * @Study Code: Did you study todayï¿½ï¿½
+ * ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½
  */
 public class dichotomia {
     public static void main(String[] args) {
@@ -17,19 +17,19 @@ public class dichotomia {
     }
 
     public  static   int search(int[] nums, int target) {
-        //¶¨ÒåÈý¸öÏÂ±ê£¬Ç°£¬ÖÐ£¬ºó
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ê£¬Ç°ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½
         int fornt, centre, rear;
         fornt = 0;
         rear = nums.length - 1;
         centre = 0;
         while (rear >= fornt) {
-            //ÖÐµÈÓÚÇ°ºóÖ®ºÍ³ýÒÔ¶þ
+            //ï¿½Ðµï¿½ï¿½ï¿½Ç°ï¿½ï¿½Ö®ï¿½Í³ï¿½ï¿½Ô¶ï¿½
             centre = (rear + fornt) / 2;
-            //µ±ÖÐ¼äÖµ±È²éÕÒÖµÐ¡Ê±£¬Ç°±êÒÆ¶¯µ½ÖÐ¼ä±ê+1
+            //ï¿½ï¿½ï¿½Ð¼ï¿½Öµï¿½È²ï¿½ï¿½ï¿½ÖµÐ¡Ê±ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½+1
             if (target > nums[centre]) {
                 fornt = centre + 1;
             }
-            //µ±ÖÐ¼äÖµ±È²éÕÒÖµ´óÊ±£¬ºì±êÒÆ¶¯µ½ÖÐ¼ä±ê-1
+            //ï¿½ï¿½ï¿½Ð¼ï¿½Öµï¿½È²ï¿½ï¿½ï¿½Öµï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½-1
             else if (target < nums[centre]) {
                 rear = centre - 1;
             } else {
