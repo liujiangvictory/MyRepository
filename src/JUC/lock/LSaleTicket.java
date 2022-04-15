@@ -38,7 +38,7 @@ class taicket {
     private int number = 30;
 
     //创建lock锁
-    private final ReentrantLock lock = new ReentrantLock();
+    private final ReentrantLock lock = new ReentrantLock(true);
 
     // 购票方法
     public void sale() {
