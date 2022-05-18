@@ -31,7 +31,7 @@ public class arrayList {
         list.add("I");
 
         System.out.println(list);
-
+		
 
     }
 
