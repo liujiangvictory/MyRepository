@@ -15,6 +15,12 @@ public class MainTest {
     //是否可以提交
     public static volatile boolean IS_OK = true;
 
+    /*@Title：
+     * @Author Liu jiang
+     * @Date 17:16 2022/5/18
+     * @Param 
+     * @return
+     **/
     public static void main(String[] args) {
         //子线程等待主线程通知
         CountDownLatch mainMonitor = new CountDownLatch(1);
