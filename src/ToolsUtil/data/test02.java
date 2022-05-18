@@ -1,14 +1,14 @@
 package ToolsUtil.data;
 
-import sun.applet.Main;
+
 
 /**
  * @Title:
  * @author: Liu jiang
  * @Date: 2021-08-02 11:14
  * @FilePath: TextDemo  ==> test02
- * @Good Mood: Today is another beautiful day£¡
- * @Study Code: Did you study today£¿
+ * @Good Mood: Today is another beautiful dayï¿½ï¿½
+ * @Study Code: Did you study todayï¿½ï¿½
  */
 public class test02 extends test01 {
     public static void main(String[] args) {

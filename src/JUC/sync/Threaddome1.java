@@ -5,7 +5,7 @@ package JUC.sync;
  * @author: Liu jiang
  * @Date: 2022-02-17 12:46
  * @FilePath: TextDemo  ==> Threaddome1
- * 创建两个线程，一个线程做+1，一个线程做-1，两个线程相互交替执行
+ * 创建两个线程，一个线程做+1，一个线程做-1，两个线程相互交替执行（使用synchronized实现）
  */
 public class Threaddome1 {
     public static void main(String[] args) {

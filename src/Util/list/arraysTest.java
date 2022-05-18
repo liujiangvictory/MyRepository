@@ -1,6 +1,7 @@
 package Util.list;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -25,5 +26,9 @@ public class arraysTest {
         System.out.println(listbb);
         System.out.println(listbb.get(0));
         System.out.println(listbb.size());
+
+        List listc = Collections.emptyList();
+        listc.add("C");
+
     }
 }
