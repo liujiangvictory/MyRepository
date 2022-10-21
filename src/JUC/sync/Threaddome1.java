@@ -58,7 +58,7 @@ public class Threaddome1 {
 //创建资源类，定义属性跟操作方法
 class Share {
     //初始值
-    private int number = 0;
+    private  int number = 0;
 
     //+1的方法
     public synchronized void incr() throws InterruptedException {
