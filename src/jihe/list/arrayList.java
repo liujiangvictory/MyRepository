@@ -1,10 +1,7 @@
 package jihe.list;
 
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 /**
  * @Title:
@@ -16,7 +13,15 @@ import java.util.UUID;
  */
 public class arrayList {
 
+    public int i1 ;
+    public int i2 ;
+
+
+
+
+
     public static void main(String[] args) {
+
 
 
         List list = new ArrayList<>(0);
@@ -29,19 +34,26 @@ public class arrayList {
         list.add("G");
         list.add("H");
         list.add("I");
+        int i1 = list.size();
+        ArrayList list1 = (ArrayList) ((ArrayList<?>) list).clone();
+        list1.add(0,"a");
 
-        System.out.println(list);
-		
+
+
+        System.out.println("list"+list);
+        System.out.println("list1"+list1);
+
 
     }
 
 
 
 
-/*
 
-    public static void mainCopyOnWriteArrayList(String[] args) {
+
+    public  void mainCopyOnWriteArrayList(String[] args) {
         // ArrayList arrayList = new ArrayList();
+        int i2 = this.i1;
         List<String> arrayList =  Collections.synchronizedList(new ArrayList());
         for (int i = 0; i < 100; i++) {
             new Thread(() -> {
@@ -51,7 +63,7 @@ public class arrayList {
             }, String.valueOf(i)).start();
         }
     }
-*/
+
 
 
 }

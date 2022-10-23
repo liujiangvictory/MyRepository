@@ -13,12 +13,12 @@ public class CountDoenLatchDemo {
             new Thread(() -> {
                 System.out.println(Thread.currentThread().getName() + " 号同学离开教室");
                 //计数器减一
-                countDoenLatch.countDown();
+                 countDoenLatch.countDown();
 
             }, String.valueOf(i)).start();
         }
         //等待大家都出教师班长再锁门离开
-        countDoenLatch.await();
+         countDoenLatch.await();
         System.out.println(Thread.currentThread().getName() + " 班长锁门走人了");
     }
 

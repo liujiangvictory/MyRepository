@@ -12,6 +12,8 @@ import java.util.Vector;
  * @Study Code: Did you study today？
  */
 public class vector {
+    public int v1;
+    public int v2;
     public static void main(String[] args) {
         Vector<Object> objects = new Vector<>();
         for (int i = 0; i < 100; i++) {
